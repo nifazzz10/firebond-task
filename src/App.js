@@ -61,7 +61,7 @@ function App() {
             args[operation.arg2Index].bool === "true"))
       );
     }
-  }, true);
+  }, operations.length > 0 && operations[0].type === "or" ? false : true);
 
   return (
     <div>
